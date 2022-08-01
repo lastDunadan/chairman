@@ -1,0 +1,23 @@
+.headlineContainer {
+    width: 100%;
+    height: fit-content;
+}
+
+.headline {
+    border: 5px solid #f9bb10;
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 30px;
+    display: block;
+    margin: 10px;
+    text-transform: uppercase;
+    color: #f9bb10;
+    font-size: 21px;
+}
+
+@media (min-width: 575px) {
+    .headline {
+        margin: 10px;
+        font-size: 30px;
+    }
+}

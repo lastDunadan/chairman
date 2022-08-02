@@ -1,0 +1,35 @@
+.skillBox {
+  display: block;
+  width: 110px;
+  height: 110px;
+  padding: 10px;
+  border: 5px solid #f9bb10;
+  margin: 10px;
+  color: #f9bb10;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s all;
+  background-color: rgba(255, 255, 255, 0.75);
+
+  &:hover {
+    color: #000;
+    background-color: #f9bb10;
+  }
+
+  @media (min-width: 470px) {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+  }
+
+  @media (min-width: 575px) {
+    width: 210px;
+    height: 210px;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+  }
+}
+
+

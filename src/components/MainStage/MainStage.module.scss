@@ -1,0 +1,31 @@
+.mainStage {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  height: 100vh;
+  overflow-y: scroll;
+  background-image: url('../../../public/img/chairman_desktop.jpg');
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: 575px) {
+    background-size: initial;
+  }
+}
+
+.skillBoxContainer {
+  width: 100%;
+  max-width: 1920px;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: 575px) {
+    justify-content: left;
+  }
+}
+
+

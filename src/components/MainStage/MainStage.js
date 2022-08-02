@@ -14,7 +14,6 @@ const skillBoxes = [
   {name: 'Software /', nameTwo: 'Hardware'},
   {name: 'Soft skills'},
   {name: 'Experience /', nameTwo: 'Education'}
-
 ];
 
 const MainStage = () => {

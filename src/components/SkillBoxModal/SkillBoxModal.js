@@ -1,18 +1,22 @@
 import { createPortal } from 'react-dom'
 import style from './SkillBoxModal.module.css'
 
-const MainModal = ({name}) => (
-  <div className={style.backdrop}>
-    <div className={style.modalInnerBox}>
-      {name}
-    </div>
-  </div>
-)
+const MainModal = ({name, onClose}) => {
 
-const SkillBoxModal = ({nameOne}) => {
+  return (
+    <div className={style.backdrop}>
+      <div className={style.modalInnerBox}>
+        <p>{name}</p>
+        <button onClick={onClose}>close</button>
+      </div>
+    </div>
+  )
+}
+
+const SkillBoxModal = ({nameOne, onClose}) => {
     return (
       <>
-        {createPortal(<MainModal name={nameOne}/>, document.getElementById('modal-root'))}
+        {createPortal(<MainModal name={nameOne} onClose={onClose}/>, document.getElementById('modal-root'))}
       </>
     )
 }

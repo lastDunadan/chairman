@@ -1,17 +1,15 @@
 import {useState} from "react";
-import style from './SkillBox.module.css'
+import style from './SkillBox.module.scss'
 import SkillBoxModal from "../SkillBoxModal/SkillBoxModal";
 
-const SkillBox = ({nameOne, nameTwo, nameThree}) => {
+const SkillBox = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree, intro, content, }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   const openModal = () => {
-    console.log('modal should open')
     setIsModalOpen(true)
   }
 
   const closeModal = () => {
-    console.log('modal should close')
     setIsModalOpen(false)
   }
 
@@ -19,14 +17,21 @@ const SkillBox = ({nameOne, nameTwo, nameThree}) => {
     <>
       <div className={style.skillBox} onClick={openModal}>
         <div className={style.name}>
-          {nameOne}
+          {skillOne}
         </div>
-        {(nameTwo) && (<div className={style.name}>{nameTwo}</div>)}
-        {(nameThree) && (<div className={style.name}>{nameThree}</div>)}
+        {(skillTwo) && (<div className={style.name}>{skillTwo}</div>)}
+        {(skillThree) && (<div className={style.name}>{skillThree}</div>)}
       </div>
-      {(isModalOpen) && (<SkillBoxModal nameOne={nameOne} onClose={closeModal}/>)}
+      {(isModalOpen) && (
+        <SkillBoxModal
+          skillOne={skillOne} skillTwo={skillTwo} skillThree={skillThree}
+          iconOne={iconOne} iconTwo={iconTwo} iconThree={iconThree}
+          intro={intro} content={content} closeAction={closeModal}
+        />
+      )}
     </>
   )
+
 }
 
 export default SkillBox;

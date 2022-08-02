@@ -1,4 +1,4 @@
-import style from './Headline.module.css'
+import style from './Headline.module.scss'
 
 const Headline = ({headlineContent}) => (
   <div className={style.headlineContainer}>

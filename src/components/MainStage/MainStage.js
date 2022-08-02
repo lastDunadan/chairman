@@ -1,20 +1,7 @@
+import skillBoxes from '../../data/skillboxData'
 import Headline from "../Headline/Headline";
 import SkillBox from "../SkillBox/SkillBox";
-import style from './MainStage.module.css';
-
-const skillBoxes = [
-  {name: 'HTML', icoOne: '', text: 'Lorem Ipsum Sit'},
-  {name: 'CSS', nameTwo: 'SCSS'},
-  {name: 'JS'},
-  {name: 'REACT'},
-  {name: 'GSAP', nameTwo: 'jQUERY'},
-  {name: 'GIT',  nameTwo: 'GULP'},
-  {name: 'JIRA'},
-  {name: 'Photoshop'},
-  {name: 'Software /', nameTwo: 'Hardware'},
-  {name: 'Soft skills'},
-  {name: 'Experience /', nameTwo: 'Education'}
-];
+import style from './MainStage.module.scss';
 
 const MainStage = () => {
 
@@ -26,11 +13,15 @@ const MainStage = () => {
           skillBoxes.map((box) => {
             return (
               <SkillBox
-                key={box.name}
-                nameOne={box.name}
-                nameTwo={box.nameTwo}
-                nameThree={box.nameThree}
-                text={box.text}
+                key={box.skillNameOne}
+                skillOne={box.skillNameOne}
+                skillTwo={box.skillNameTwo}
+                skillThree={box.skillNameThree}
+                intro={box.introText}
+                content={box.contentText}
+                iconOne={box.iconOne}
+                iconTwo={box.iconTwo}
+                iconThree={box.iconThree}
               />
             )
           })

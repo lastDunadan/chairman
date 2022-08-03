@@ -1,0 +1,27 @@
+.skillFrame {
+  width: 100%;
+  text-align: center;
+
+  .skillName {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .stars {
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11px;
+    &__symbols {
+      margin-top: -5px;
+      font-size: 24px;
+      color: #f9bb10;
+    }
+  }
+
+  img{
+    max-width: 140px;
+  }
+}

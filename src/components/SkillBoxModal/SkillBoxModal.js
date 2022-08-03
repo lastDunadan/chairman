@@ -1,4 +1,5 @@
 import { createPortal } from 'react-dom'
+import Skill from '../Skill/Skill'
 import style from './SkillBoxModal.module.scss'
 
 const MainModal = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree, intro, content, closeAction}) => {
@@ -16,10 +17,12 @@ const MainModal = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree,
           </h2>
         </div>
         <div className={style.skillContainer}>
-          <div className="skillContainer__icons">
-
+          <div className={style.skillContainer__icons}>
+            <Skill iconData={iconOne}/>
+            {(iconTwo) && <Skill iconData={iconTwo}/>}
+            {(iconThree) && <Skill iconData={iconThree}/>}
           </div>
-          <div className="skillContainer__description">
+          <div className={style.skillContainer__description}>
             <p>{intro}</p>
             {(content) && (<p>{content}</p>)}
           </div>

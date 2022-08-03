@@ -37,8 +37,8 @@ const skillBoxes = [
     skillNameOne: 'GIT',
     skillNameTwo: 'GULP',
     skillNameThree: null,
-    introText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    contentText: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
+    introText: "How about some tools to make coding more efficient? My first choice is GIT (GitLab, Github, Bitbucket) to control versions of my code. And GULP as a task runner.",
+    contentText: "Though the first one is popular and kind of essential, the other is not. Some prefer Webpack but I find it too tedious and stick to task runner that makes my life much easier. One configuration file lasts years of projects. It is fast, it is easy, it is just GOOD. But yes - I can use Webpack.",
     iconOne: {name: 'GIT', picture: '/img/skill-git.png', stars: 4},
     iconTwo: {name: 'GULP', picture: '/img/skill-gulp.png', stars: 4},
     iconThree: null
@@ -48,8 +48,8 @@ const skillBoxes = [
     skillNameOne: 'PHOTOSHOP',
     skillNameTwo: null,
     skillNameThree: null,
-    introText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    contentText: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
+    introText: "Photoshop was one of the first programs I've mastered for professional purposes. But I've chosen to code after all.",
+    contentText: "Yet still my skills in that regard are very high and I can easily compose landing page designs or other web creations. And I do that often. I flirt with solutions like Figma but honestly - one just can't master everything in given time. Therefore I stick to the Photoshop for design. And learn to code in free time.",
     iconOne: {name: 'Photoshop', picture: '/img/skill-photoshop.png', stars: 4},
     iconTwo: null,
     iconThree: null
@@ -59,8 +59,8 @@ const skillBoxes = [
     skillNameOne: 'IDE',
     skillNameTwo: null,
     skillNameThree: null,
-    introText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    contentText: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
+    introText: "Atom, Brackets, Sublime... even Dreamweaver. There were many IDEs in my career. But they've all lost to Visual Studio.",
+    contentText: "It was a revolution when I first used VS. Very responsive, light, fast and could do it all. We did many, many pages together. But then came another one... and with a force of a storm it revolutionized the  way that I write a code once more. WebStorm is my IDE of choice. It may not be as light as VS, but it can do even more than its Microsoft counterpart. And it is sexy as hell.",
     iconOne: {name: 'VISUAL STUDIO', picture: '/img/skill-vs.png', stars: 4},
     iconTwo: {name: 'WEB STORM', picture: '/img/skill-webstorm.png', stars: 4},
     iconThree: null
@@ -70,8 +70,8 @@ const skillBoxes = [
     skillNameOne: 'OPERATING SYSTEMS',
     skillNameTwo: null,
     skillNameThree: null,
-    introText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    contentText: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
+    introText: "Truth to be told I care less about an OS I use. I know all of them, I worked and played with all of them. And I do prefer UNIX based systems but I can deal with Windows too.",
+    contentText: "When I was a 14 years old kid I used to play pranks on my IT teachers by writing batch files for Windows. They were running on system startup and were displaying stupid error messages during boot sequence: 'ERROR: Mousepad Drivers were not found. Press any key to continue...' was my favorite. So yes - I've always known how to have fun with Windows. And I still do. But my first Linux (one of the Ubuntus) gave me so much more opportunities to configure things, meddle with settings and write even more funny shell scripts. I couldn't help falling in love. To this day Linux systems are my favorites. And the Mac OS? I find it pleasant for its linux-based file system and bash console. But despite these awesome features it is simply too strict and too boring.",
     iconOne: {name: 'WINDOWS', picture: '/img/skill-os-windows.png', stars: 5},
     iconTwo: {name: 'MAC OS', picture: '/img/skill-os-mac.png', stars: 5},
     iconThree: {name: 'LINUX', picture: '/img/skill-os-linux.png', stars: 5}
@@ -87,7 +87,7 @@ const skillBoxes = [
     iconTwo: {name: 'CREATIVITY', picture: '/img/soft-creativity.png', stars: 5},
     iconThree: {name: 'TEACHING', picture: 'img/soft-teaching.png', stars: 4}
   },
-  // OTHER
+  // EXPERIENCE
   {
     skillNameOne: 'EDUCATION',
     skillNameTwo: 'EXPERIENCE',
@@ -106,8 +106,8 @@ const skillBoxes = [
     introText: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     contentText: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.',
     iconOne: {name: 'GAMER', picture: '/img/soft-education.png', stars: 5},
-    iconTwo: {name: 'RPG GEEK', picture: '/img/soft-experience.png', stars: 5},
-    iconThree: {name: 'NATURE ENTHUSIAST', picture: '/img/soft-experience.png', stars: 5}
+    iconTwo: {name: 'RPG GEEK', picture: '/img/soft-experience.png', stars: 4},
+    iconThree: {name: 'NATURE ENTHUSIAST', picture: '/img/soft-experience.png', stars: 3}
   }
 ];
 

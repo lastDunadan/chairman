@@ -2,7 +2,7 @@ import { createPortal } from 'react-dom'
 import Skill from '../Skill/Skill'
 import style from './SkillBoxModal.module.scss'
 
-const MainModal = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree, intro, content, closeAction}) => {
+const MainModal = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree, intro, contentOne, contentTwo, closeAction}) => {
 
   return (
     <>
@@ -24,7 +24,8 @@ const MainModal = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree,
           </div>
           <div className={style.skillContainer__description}>
             <p>{intro}</p>
-            {(content) && (<p>{content}</p>)}
+            {(contentOne) && (<p>{contentOne}</p>)}
+            {(contentTwo) && (<p>{contentTwo}</p>)}
           </div>
         </div>
         <div className={style.skillFooter}>
@@ -40,13 +41,14 @@ const MainModal = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree,
   )
 }
 
-const SkillBoxModal = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree, intro, content, closeAction}) => {
+const SkillBoxModal = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree, intro, contentOne, contentTwo, closeAction}) => {
     return (
       <>
         {createPortal(<MainModal
           skillOne={skillOne} skillTwo={skillTwo} skillThree={skillThree}
           iconOne={iconOne} iconTwo={iconTwo} iconThree={iconThree}
-          intro={intro} content={content} closeAction={closeAction}
+          intro={intro} contentOne={contentOne} contentTwo={contentTwo}
+          closeAction={closeAction}
         />,
           document.getElementById('modal-root'))}
       </>

@@ -18,7 +18,8 @@ const MainStage = () => {
                 skillTwo={box.skillNameTwo}
                 skillThree={box.skillNameThree}
                 intro={box.introText}
-                content={box.contentText}
+                contentOne={box.mainParagraph}
+                contentTwo={box.secondaryParagraph}
                 iconOne={box.iconOne}
                 iconTwo={box.iconTwo}
                 iconThree={box.iconThree}

@@ -5,11 +5,14 @@ import SkillBoxModal from "../SkillBoxModal/SkillBoxModal";
 const SkillBox = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree, intro, contentOne, contentTwo }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
+
+
   const openModal = () => {
     setIsModalOpen(true)
   }
 
   const closeModal = () => {
+
     setIsModalOpen(false)
   }
 

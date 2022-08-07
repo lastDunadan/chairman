@@ -28,6 +28,10 @@
   @media (min-width: 575px) {
     top: 10vh;
     max-height: 80vh;
+
+    @media (min-height: 940px) {
+      overflow-y: hidden;
+    }
   }
 
   @media (min-width: 992px) {
@@ -35,9 +39,7 @@
     width: 80%;
   }
 
-  @media (min-height: 940px) {
-    overflow-y: hidden;
-  }
+
 
 }
 

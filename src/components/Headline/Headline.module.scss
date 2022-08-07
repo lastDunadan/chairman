@@ -1,20 +1,24 @@
 .headlineContainer {
   width: 100%;
   height: fit-content;
+
 }
 
 .headline {
   border: 5px solid #f9bb10;
-  width: fit-content;
+  width: auto;
   height: fit-content;
   padding: 15px 30px;
   display: block;
   margin: 10px;
+  text-align: center;
   text-transform: uppercase;
   color: #f9bb10;
   font-size: 21px;
-  @media (min-width: 575px) {
+  background-color: rgba(255, 255, 255, 0.9);
 
+  @media (min-width: 575px) {
+    width: fit-content;
     margin: 10px;
     font-size: 30px;
   }

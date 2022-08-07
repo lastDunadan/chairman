@@ -1,0 +1,24 @@
+.contact {
+  border: 5px solid #f9bb10;
+  width: 100%;
+  height: fit-content;
+  display: block;
+  margin: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  @media (min-width: 488px) {
+    width: fit-content;
+  }
+
+  img {
+    width: 40px;
+    margin: 7px;
+
+    @media (min-width: 640px) {
+      width: 52px;
+      margin: 8px 15px 6px;
+    }
+  }
+}

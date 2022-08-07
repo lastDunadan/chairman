@@ -27,7 +27,7 @@ const MainStage = () => {
         {
           skillBoxes.map((box) => {
             return (
-              <div  className="animationLayer" key={box.skillNameOne}>
+              <div className="animationLayer" key={box.skillNameOne}>
                 <SkillBox
                   skillOne={box.skillNameOne}
                   skillTwo={box.skillNameTwo}

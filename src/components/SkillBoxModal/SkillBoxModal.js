@@ -5,11 +5,11 @@ import style from './SkillBoxModal.module.scss'
 import {gsap} from "gsap";
 
 const MainModal = ({
-     skillOne, skillTwo, skillThree,
-     iconOne, iconTwo, iconThree,
-     intro, contentOne, contentTwo,
-     closeAction
-  }) => {
+                     skillOne, skillTwo, skillThree,
+                     iconOne, iconTwo, iconThree,
+                     intro, contentOne, contentTwo,
+                     closeAction
+                   }) => {
 
   const [modalReady, setModalReady] = useState(true)
 
@@ -29,20 +29,19 @@ const MainModal = ({
   }, []);
 
   useEffect(() => {
-    if (!modalReady) {
-      gsap.to(innerModal.current,
-        {
-          duration: 0.45,
-          opacity: 0
-        }
-      );
-      gsap.to(outerModal.current,
-        {
-          duration: 0.45,
-          opacity: 0
-        }
-      );
-    }
+    if (modalReady) return;
+    gsap.to(innerModal.current,
+      {
+        duration: 0.45,
+        opacity: 0
+      }
+    );
+    gsap.to(outerModal.current,
+      {
+        duration: 0.45,
+        opacity: 0
+      }
+    );
   }, [modalReady])
 
   const hideModal = () => {
@@ -88,11 +87,11 @@ const MainModal = ({
 }
 
 const SkillBoxModal = ({
-     skillOne, skillTwo, skillThree,
-     iconOne, iconTwo, iconThree,
-     intro, contentOne, contentTwo,
-     closeAction
-  }) => {
+                         skillOne, skillTwo, skillThree,
+                         iconOne, iconTwo, iconThree,
+                         intro, contentOne, contentTwo,
+                         closeAction
+                       }) => {
   return (
     <>
       {createPortal(<MainModal

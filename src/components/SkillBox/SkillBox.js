@@ -5,25 +5,22 @@ import SkillBoxModal from "../SkillBoxModal/SkillBoxModal";
 const SkillBox = ({skillOne, skillTwo, skillThree, iconOne, iconTwo, iconThree, intro, contentOne, contentTwo }) => {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
-
-
   const openModal = () => {
     setIsModalOpen(true)
   }
 
   const closeModal = () => {
-
     setIsModalOpen(false)
   }
 
   return (
     <>
       <div className={style.skillBox} onClick={openModal}>
-        <div className={style.name}>
+        <div>
           {skillOne}
         </div>
-        {(skillTwo) && (<div className={style.name}>{skillTwo}</div>)}
-        {(skillThree) && (<div className={style.name}>{skillThree}</div>)}
+        {(skillTwo) && (<div>{skillTwo}</div>)}
+        {(skillThree) && (<div>{skillThree}</div>)}
       </div>
       {(isModalOpen) && (
         <SkillBoxModal

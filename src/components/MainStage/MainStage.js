@@ -22,7 +22,7 @@ const MainStage = () => {
 
   return (
     <section className={style.mainStage}>
-      <Headline headlineContent='Pawel Modzelewski'/>
+      <Headline>Pawel Modzelewski</Headline>
       <div className={style.skillBoxContainer}>
         {
           skillBoxes.map((box) => {

@@ -6,22 +6,17 @@ const Skill = ({iconData}) => {
     switch (iconData.stars) {
       case 0:
         return (<span>&#x2606;&#x2606;&#x2606;&#x2606;&#x2606;</span>)
-        break;
       case 1:
         return (<span>&#x2605;&#x2606;&#x2606;&#x2606;&#x2606;</span>)
-        break;
       case 2:
         return (<span>&#x2605;&#x2605;&#x2606;&#x2606;&#x2606;</span>)
-        break;
       case 3:
         return (<span>&#x2605;&#x2605;&#x2605;&#x2606;&#x2606;</span>)
-        break;
       case 4:
         return (<span>&#x2605;&#x2605;&#x2605;&#x2605;&#x2606;</span>)
-        break;
       case 5:
+      default:
         return (<span>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605;</span>)
-        break;
     }
   }
 

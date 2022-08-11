@@ -1,9 +1,9 @@
 import style from './Headline.module.scss'
 import Contact from "../Contact/Contact";
 
-const Headline = ({headlineContent}) => (
+const Headline = ({children}) => (
   <div className={style.headlineContainer}>
-    <h1 className={style.headline}>{headlineContent}</h1>
+    <h1 className={style.headline}>{children}</h1>
     <Contact />
   </div>
 )

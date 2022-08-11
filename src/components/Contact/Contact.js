@@ -10,22 +10,26 @@ const Contact = () => {
   }
 
   useEffect(() => {
-    const hoverAnimation = (iconToAnimate) => {
-      iconToAnimate.addEventListener('mouseover', () => {
-        gsap.fromTo(iconToAnimate,
-          {
-            rotateY: 0
-          },
-          {
-            rotateY: 360,
-            duration: 2
-          }
-        );
-      })
+
+    const hoverAnimation = (event) => {
+      gsap.fromTo(event.target,
+        {
+          rotateY: 0
+        },
+        {
+          rotateY: 360,
+          duration: 2
+        }
+      );
     }
 
-    hoverAnimation(icons.social.current);
-    hoverAnimation(icons.repo.current);
+    icons.social.current.addEventListener('mouseover', hoverAnimation)
+    icons.repo.current.addEventListener('mouseover', hoverAnimation)
+
+    return () => {
+      icons.social.current.removeEventListener('mouseover', hoverAnimation)
+      icons.repo.current.removeEventListener('mouseover', hoverAnimation)
+    }
   }, []);
 
   return (
@@ -34,14 +38,16 @@ const Contact = () => {
         href="https://www.linkedin.com/in/pawel-modzelewski/"
         alt="Linked In"
         target="_blank"
+        rel="noreferrer"
       >
-        <img src="/img/linkedin.png" ref={icons.social}/>
+        <img src="/img/linkedin.png" ref={icons.social} alt="linkedin"/>
       </a>
       <a href="https://github.com/lastDunadan"
          alt="Linked In"
          target="_blank"
+         rel="noreferrer"
       >
-        <img src="/img/github.png" ref={icons.repo}/>
+        <img src="/img/github.png" ref={icons.repo} alt="github"/>
       </a>
     </div>
   )
